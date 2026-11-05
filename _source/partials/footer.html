@@ -1,0 +1,65 @@
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="{{link:home}}"><img src="{{asset:img/favicon.svg}}" alt="" width="38" height="38"><span><b>Save Life Talent</b><small>AI-assisted healthcare staffing</small></span></a>
+        <p>Credential-verified nurses, allied and support professionals for hospitals, long-term care, clinics and home health.</p>
+      </div>
+      <div>
+        <h4>Facilities</h4>
+        <ul>
+          <li><a href="{{link:contact}}">Request staff</a></li>
+          <li><a href="{{link:facilities}}">Staffing services</a></li>
+          <li><a href="{{link:facilities}}#compliance">Credentialing</a></li>
+          <li><a href="{{link:ai}}">How our AI works</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Clinicians</h4>
+        <ul>
+          <li><a href="{{link:jobs}}">Search jobs</a></li>
+          <li><a href="{{link:contact}}#apply">Send your resume</a></li>
+          <li><a href="{{link:clinicians}}">Pay and benefits</a></li>
+          <li><a href="{{link:home}}#specialties">Specialties</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:{{phone_tel}}">{{phone}}</a></li>
+          <li><a href="mailto:{{email}}">{{email}}</a></li>
+          <li>{{address}}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>&copy; {{year}} Save Life Talent. An equal opportunity employer.</span>
+      <span><a href="{{link:privacy}}">Privacy</a> &nbsp; <a href="{{link:privacy}}#terms">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<button class="assist-fab" aria-expanded="false" aria-controls="assist">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1l2.6 7.4L22 11l-7.4 2.6L12 21l-2.6-7.4L2 11l7.4-2.6z"/></svg>
+  <span>Ask our assistant</span>
+</button>
+<div class="assist" id="assist" role="dialog" aria-label="Save Life Talent assistant">
+  <div class="assist-head">
+    <div><b>Save Life Talent assistant</b><small>Automated answers, real recruiters on call</small></div>
+    <button aria-label="Close assistant">&times;</button>
+  </div>
+  <div class="assist-log" aria-live="polite"></div>
+  <div class="quick">
+    <button type="button">I need a nurse tonight</button>
+    <button type="button">Find travel jobs</button>
+    <button type="button">How is pay handled?</button>
+    <button type="button">Credentialing checks</button>
+  </div>
+  <form><label class="sr-only" for="assist-in">Your question</label><input id="assist-in" placeholder="Ask about shifts, jobs, pay…" autocomplete="off"><button aria-label="Send"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></form>
+  <p class="assist-note">Automated assistant. For urgent shifts, call {{phone}}.</p>
+</div>
+<script>window.SLT={phone:"{{phone}}",phoneTel:"{{phone_tel}}",email:"{{email}}",links:{home:"{{link:home}}",facilities:"{{link:facilities}}",clinicians:"{{link:clinicians}}",jobs:"{{link:jobs}}",ai:"{{link:ai}}",contact:"{{link:contact}}"}};</script>
+{{foot_assets}}
+</body>
+</html>

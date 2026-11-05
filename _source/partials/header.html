@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{head}}
+<meta name="theme-color" content="#0E1B2C">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+{{head_assets}}
+</head>
+<body data-page="{{page}}" {{body_class}}>
+<a class="skip" href="#main">Skip to content</a>
+<div class="util">
+  <div class="wrap">
+    <span class="live">Staffing desk open 24/7: <a href="tel:{{phone_tel}}">{{phone}}</a></span>
+    <span><a href="mailto:{{email}}">{{email}}</a></span>
+  </div>
+</div>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="{{link:home}}">
+      <img src="{{asset:img/favicon.svg}}" alt="" width="38" height="38">
+      <span><b>Save Life Talent</b><small>AI-assisted healthcare staffing</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a data-nav="facilities" href="{{link:facilities}}">For facilities</a>
+      <a data-nav="clinicians" href="{{link:clinicians}}">For clinicians</a>
+      <a data-nav="jobs" href="{{link:jobs}}">Jobs</a>
+      <a data-nav="ai" class="nav-ai" href="{{link:ai}}">How our AI works</a>
+      <a data-nav="contact" href="{{link:contact}}">Contact</a>
+      <div class="nav-mobile-cta"><a class="btn btn-ghost" href="{{link:jobs}}">Find a job</a><a class="btn btn-primary" href="{{link:contact}}">Request staff</a></div>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-ghost" href="{{link:jobs}}">Find a job</a>
+      <a class="btn btn-primary" href="{{link:contact}}">Request staff</a>
+    </div>
+    <button class="menu-btn" aria-expanded="false" aria-label="Open menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+<main id="main">

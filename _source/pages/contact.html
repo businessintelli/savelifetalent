@@ -1,0 +1,68 @@
+<!--meta title="Request Staff or Apply | Save Life Talent" description="Request nurses, allied or support staff for your facility, or apply for healthcare jobs. 24/7 staffing desk."-->
+<section class="page-hero">
+  <div class="wrap">
+    <p class="crumbs"><a href="{{link:home}}">Home</a> / Contact</p>
+    <h1>Let's get your team, or your career, covered.</h1>
+    <p class="lede">Facilities: tell us what you need and we'll confirm availability. Clinicians: send your details and a recruiter will reach out within one business day.</p>
+  </div>
+</section>
+<section style="padding-top:56px">
+  <div class="wrap cols" style="grid-template-columns:1.6fr 1fr">
+    <div>
+      <div class="tabs" role="group" aria-label="Choose a form">
+        <button class="tab" data-t="facility" aria-pressed="true">I need staff</button>
+        <button class="tab" data-t="clinician" aria-pressed="false">I'm looking for work</button>
+      </div>
+
+      <div id="p-facility">
+        <form action="https://formsubmit.co/{{form_email}}" method="POST" class="form-grid">
+          <input type="hidden" name="_subject" value="New staffing request — savelifetalent.com">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="{{abs:thank-you}}">
+          <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="field"><label for="f-fac">Facility name</label><input id="f-fac" name="facility_name" required></div>
+          <div class="field"><label for="f-name">Your name</label><input id="f-name" name="your_name" required autocomplete="name"></div>
+          <div class="field"><label for="f-email">Work email</label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
+          <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+          <div class="field"><label for="f-role">Role needed</label>
+            <select id="f-role" name="role_needed"><option>Registered Nurse</option><option>LPN / LVN</option><option>CNA / PCT</option><option>Allied Health</option><option>Therapy</option><option>Behavioral Health</option><option>NP / PA</option><option>Other</option></select></div>
+          <div class="field"><label for="f-type">Staffing type</label>
+            <select id="f-type" name="staffing_type"><option>Per diem</option><option>Contract</option><option>Travel</option><option>Permanent</option><option>Rapid response</option></select></div>
+          <div class="full assist-row">
+            <span>Not sure what to include? Draft a complete request from your picks above and fill in the blanks.</span>
+            <button type="button" class="btn btn-ai" id="write-assist" style="padding:10px 16px;font-size:14.5px">Draft my request</button>
+          </div>
+          <div class="field full"><label for="f-details">Shifts, unit and start date</label><textarea id="f-details" name="details" required></textarea></div>
+          <div class="full"><button class="btn btn-primary" type="submit">Send staffing request</button></div>
+        </form>
+      </div>
+
+      <div id="p-clinician" hidden>
+        <form action="https://formsubmit.co/{{form_email}}" method="POST" enctype="multipart/form-data" class="form-grid">
+          <input type="hidden" name="_subject" value="New clinician application — savelifetalent.com">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="{{abs:thank-you}}">
+          <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="field"><label for="c-name">Full name</label><input id="c-name" name="full_name" required autocomplete="name"></div>
+          <div class="field"><label for="c-email">Email</label><input id="c-email" name="email" type="email" required autocomplete="email"></div>
+          <div class="field"><label for="c-phone">Phone</label><input id="c-phone" name="phone" type="tel" required autocomplete="tel"></div>
+          <div class="field"><label for="c-disc">Discipline</label>
+            <select id="c-disc" name="discipline"><option>Registered Nurse</option><option>LPN / LVN</option><option>CNA / PCT</option><option>Allied Health</option><option>Therapy</option><option>Behavioral Health</option><option>NP / PA</option><option>Other</option></select></div>
+          <div class="field"><label for="c-spec">Specialty or role</label><input id="c-spec" name="specialty" placeholder="e.g. ICU, ER, long-term care"></div>
+          <div class="field"><label for="c-states">State(s) licensed</label><input id="c-states" name="states_licensed"></div>
+          <div class="field"><label for="c-pref">Preferred work</label>
+            <select id="c-pref" name="preferred_work"><option>Open to anything</option><option>Per diem</option><option>Local contract</option><option>Travel</option><option>Permanent</option></select></div>
+          <div class="field"><label for="c-file">Resume</label><input id="c-file" name="attachment" type="file" accept=".pdf,.doc,.docx"><small>PDF or Word. We'll build your profile from it.</small></div>
+          <div class="full"><button class="btn btn-ai" type="submit">Send application</button></div>
+        </form>
+      </div>
+    </div>
+
+    <aside class="contact-side card">
+      <div><h3>24/7 staffing desk</h3><p><a href="tel:{{phone_tel}}">{{phone}}</a></p></div>
+      <div><h3>Email</h3><p><a href="mailto:{{email}}">{{email}}</a></p></div>
+      <div><h3>Office</h3><p>{{address}}</p></div>
+      <div><h3>Office hours</h3><p>{{hours}}</p><span class="muted" style="font-size:15px">Staffing line open 24/7</span></div>
+    </aside>
+  </div>
+</section>

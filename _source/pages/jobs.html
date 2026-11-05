@@ -1,0 +1,102 @@
+<!--meta title="Healthcare Jobs: Nursing, Allied & Travel | Save Life Talent" description="Search per diem, contract, travel and permanent healthcare jobs in plain language. RN, LPN, CNA, allied, therapy and behavioral health roles with weekly pay."-->
+<section class="page-hero">
+  <div class="wrap">
+    <p class="crumbs"><a href="{{link:home}}">Home</a> / Jobs</p>
+    <h1>Find your next healthcare assignment.</h1>
+    <p class="lede">Describe the job you want in your own words. Apply once, and a specialty recruiter follows up within one business day.</p>
+    <form class="smart-search" id="job-search" role="search" style="margin-top:28px">
+      <label class="sr-only" for="job-q">Describe the job you want</label>
+      <input id="job-q" type="search" placeholder="e.g. night shift ICU per diem" autocomplete="off">
+      <button class="btn btn-ai" type="submit">Search</button>
+    </form>
+    <p class="try">Try: <button type="button">travel ER nurse</button> <button type="button">CNA days contract</button> <button type="button">permanent psych evenings</button></p>
+    <div class="parsed" aria-live="polite"></div>
+  </div>
+</section>
+<section style="padding-top:48px">
+  <div class="wrap">
+    <div class="filters">
+      <div class="group" role="group" aria-label="Filter by job type">
+        <button class="flt" data-f="All" aria-pressed="true">All</button>
+        <button class="flt" data-f="Per Diem" aria-pressed="false">Per diem</button>
+        <button class="flt" data-f="Contract" aria-pressed="false">Contract</button>
+        <button class="flt" data-f="Travel" aria-pressed="false">Travel</button>
+        <button class="flt" data-f="Permanent" aria-pressed="false">Permanent</button>
+      </div>
+      <strong id="count" aria-live="polite"></strong>
+    </div>
+    <div class="job-list">
+      <article class="job" data-type="Per Diem" data-shift="Nights">
+        <div><h3>Registered Nurse — ICU<span class="type">Per Diem</span></h3><div class="where">Acute care hospital, {{city}}</div><div class="fit">Matches your search</div></div>
+        <dl><dt>Schedule</dt><dd>Nights, 12 hr</dd></dl>
+        <dl><dt>Pay</dt><dd>Weekly, rate on request</dd></dl>
+        <a class="btn btn-primary" href="{{link:contact}}?role=Registered%20Nurse%20-%20ICU#apply">Apply</a>
+      </article>
+      <article class="job" data-type="Travel" data-shift="Days">
+        <div><h3>Registered Nurse — Emergency<span class="type">Travel</span></h3><div class="where">Level II trauma center, Nationwide</div><div class="fit">Matches your search</div></div>
+        <dl><dt>Schedule</dt><dd>13 weeks, 3x12</dd></dl>
+        <dl><dt>Pay</dt><dd>Weekly, rate on request</dd></dl>
+        <a class="btn btn-primary" href="{{link:contact}}?role=Registered%20Nurse%20-%20Emergency#apply">Apply</a>
+      </article>
+      <article class="job" data-type="Contract" data-shift="Days">
+        <div><h3>Certified Nursing Assistant<span class="type">Contract</span></h3><div class="where">Skilled nursing facility, {{city}}</div><div class="fit">Matches your search</div></div>
+        <dl><dt>Schedule</dt><dd>Days, 8 hr</dd></dl>
+        <dl><dt>Pay</dt><dd>Weekly, rate on request</dd></dl>
+        <a class="btn btn-primary" href="{{link:contact}}?role=Certified%20Nursing%20Assistant#apply">Apply</a>
+      </article>
+      <article class="job" data-type="Permanent" data-shift="Days">
+        <div><h3>Licensed Practical Nurse<span class="type">Permanent</span></h3><div class="where">Rehab center, {{city}}</div><div class="fit">Matches your search</div></div>
+        <dl><dt>Schedule</dt><dd>Days, full-time</dd></dl>
+        <dl><dt>Pay</dt><dd>Weekly, rate on request</dd></dl>
+        <a class="btn btn-primary" href="{{link:contact}}?role=Licensed%20Practical%20Nurse#apply">Apply</a>
+      </article>
+      <article class="job" data-type="Travel" data-shift="Nights">
+        <div><h3>Respiratory Therapist<span class="type">Travel</span></h3><div class="where">Acute care hospital, Nationwide</div><div class="fit">Matches your search</div></div>
+        <dl><dt>Schedule</dt><dd>13 weeks, nights</dd></dl>
+        <dl><dt>Pay</dt><dd>Weekly, rate on request</dd></dl>
+        <a class="btn btn-primary" href="{{link:contact}}?role=Respiratory%20Therapist#apply">Apply</a>
+      </article>
+      <article class="job" data-type="Contract" data-shift="Days">
+        <div><h3>Surgical Technologist<span class="type">Contract</span></h3><div class="where">Ambulatory surgery center, {{city}}</div><div class="fit">Matches your search</div></div>
+        <dl><dt>Schedule</dt><dd>Days, 10 hr</dd></dl>
+        <dl><dt>Pay</dt><dd>Weekly, rate on request</dd></dl>
+        <a class="btn btn-primary" href="{{link:contact}}?role=Surgical%20Technologist#apply">Apply</a>
+      </article>
+      <article class="job" data-type="Per Diem" data-shift="Flexible">
+        <div><h3>Home Health Aide<span class="type">Per Diem</span></h3><div class="where">Home health agency, {{city}}</div><div class="fit">Matches your search</div></div>
+        <dl><dt>Schedule</dt><dd>Flexible</dd></dl>
+        <dl><dt>Pay</dt><dd>Weekly, rate on request</dd></dl>
+        <a class="btn btn-primary" href="{{link:contact}}?role=Home%20Health%20Aide#apply">Apply</a>
+      </article>
+      <article class="job" data-type="Permanent" data-shift="Evenings">
+        <div><h3>Psychiatric RN<span class="type">Permanent</span></h3><div class="where">Behavioral health hospital, {{city}}</div><div class="fit">Matches your search</div></div>
+        <dl><dt>Schedule</dt><dd>Evenings, full-time</dd></dl>
+        <dl><dt>Pay</dt><dd>Weekly, rate on request</dd></dl>
+        <a class="btn btn-primary" href="{{link:contact}}?role=Psychiatric%20RN#apply">Apply</a>
+      </article>
+      <article class="job" data-type="Per Diem" data-shift="Nights">
+        <div><h3>Registered Nurse — Med-Surg / Tele<span class="type">Per Diem</span></h3><div class="where">Community hospital, {{city}}</div><div class="fit">Matches your search</div></div>
+        <dl><dt>Schedule</dt><dd>Nights, 12 hr</dd></dl>
+        <dl><dt>Pay</dt><dd>Weekly, rate on request</dd></dl>
+        <a class="btn btn-primary" href="{{link:contact}}?role=Registered%20Nurse%20-%20Med-Surg%20/%20Tele#apply">Apply</a>
+      </article>
+      <article class="job" data-type="Contract" data-shift="Days">
+        <div><h3>Physical Therapist<span class="type">Contract</span></h3><div class="where">Outpatient clinic, {{city}}</div><div class="fit">Matches your search</div></div>
+        <dl><dt>Schedule</dt><dd>Days, 8 hr</dd></dl>
+        <dl><dt>Pay</dt><dd>Weekly, rate on request</dd></dl>
+        <a class="btn btn-primary" href="{{link:contact}}?role=Physical%20Therapist#apply">Apply</a>
+      </article>
+    </div>
+    <div class="empty">
+      <h3>No roles match that search yet.</h3>
+      <p class="muted">Send your resume and we'll alert you when one opens, or clear the search to see every role.</p>
+      <a class="btn btn-ai" href="{{link:contact}}#apply">Get matched to new roles</a>
+    </div>
+  </div>
+</section>
+<div class="cta-band">
+  <div class="wrap">
+    <div><h2>Don't see your specialty?</h2><p>Send your resume and a recruiter will match you to new openings as they come in.</p></div>
+    <div><a class="btn btn-light" href="{{link:contact}}#apply">Send your resume</a></div>
+  </div>
+</div>
